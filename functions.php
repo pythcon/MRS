@@ -30,7 +30,7 @@ function authenticate($user, $pass){
     $dsn = "mysql:host=$db_hostname;dbname=$db_project";
     try {
         $db = new PDO($dsn, $db_username, $db_password);
-        $sql = "SELECT * FROM users WHERE email='$user' AND password='$pass'";
+        $sql = "SELECT * FROM users WHERE email='$user' AND pass='$pass'";
         $q = $db->prepare($sql);
         $q->execute();
         $results = $q->fetchAll();
