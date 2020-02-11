@@ -30,21 +30,15 @@
 				<form class="request-form validate-form" action="handler.php">
                     <div class="row">
                         <div>
-                            <h3>Step 1:</h3>
-                            <p>Where is your request for?</p>
-                            <select name="location">
-                                <option value="Campbell Hall">Campbell Hall</option>
-                                <option value="Campus Center">Campus Center</option>
-                                <option value="Campus Wide">Campus-Wide</option>
-                                <option value="Central Avenue Building">Central Avenue Building</option>
-                                <option value="Central King Building">Central King Building</option>
-                                <option value="CHEN">CHEN</option>
-                                <option value="Colton Hall">Colton Hall</option>
-                                <option value="Coullimore Hall">Cullimore Hall</option>
-                                <option value="Cypress Residence Hall">Cypress Residence Hall</option>
-                                <option value="Dorman Residence Hall">Dorman Residence Hall</option>
-                                <option value="Eberhardt Hall">Eberhardt Hall</option>
-                            </select>
+                            <h3>Dashboard:</h3>
+                            <p>What would you like to do?</p>
+                            <br>
+                            <div class="mx-auto" id="accountPreview">
+                                <h5>Hello $user</h5>
+                                <p>You live in <b>$building</b>, in room <b>$room</b>.</p>
+                            </div>
+                            <br>
+                            
                         </div>
                     </div>
                     
@@ -75,10 +69,17 @@
 						</div>
 					</div>-->
 
-					<div class="container-login100-form-btn">
-						<button class="request-form-btn mx-auto">
+					<div class="request-login100-form-btn">
+						<a class="request-form-btn mx-auto" href="newrequest.html">
 							New Request
-						</button>
+						</a>
+                        <a class="request-form-btn mx-auto" href="myrequests.php">
+							My Requests
+						</a>
+                        <!--if staff member-->
+                        <a class="request-form-btn mx-auto" href="myrequests.php">
+							All Requests
+						</a>
 					</div>
 				</form>
 			</div>

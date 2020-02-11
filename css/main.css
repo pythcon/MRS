@@ -403,6 +403,28 @@ input.input100 {
   flex-wrap: wrap;
 }
 
+.request-login100-form-btn {
+  width: 100%;
+  padding: 0 0 1em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newrequest-login100-form-btn {
+  width: 100%;
+  padding: 1em 0 1em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .login100-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -538,6 +560,15 @@ input.input100 {
     visibility: visible;
     opacity: 1;
   }
+}
+
+.requestStep{
+    
+}
+
+.textBox{
+    border-style: groove;
+    border: 1px;
 }
 
 

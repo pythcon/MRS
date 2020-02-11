@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NJIT MRS | New Request</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+					<span class="login100-form-title-1">
+						NJIT MRS
+					</span>
+				</div>
+
+				<form class="request-form validate-form" action="handler_newrequest.php">
+                    <div class="mx-auto">
+                        <div class="requestStep">
+                            <h3>Step 1:</h3>
+                            <p>What is the location of your request?</p>
+                            <select name="location">
+                                <option value="">(select location)</option>
+                                <option value="Campbell Hall">Campbell Hall</option>
+                                <option value="Campus Center">Campus Center</option>
+                                <option value="Campus Wide">Campus-Wide</option>
+                                <option value="Central Avenue Building">Central Avenue Building</option>
+                                <option value="Central King Building">Central King Building</option>
+                                <option value="CHEN">CHEN</option>
+                                <option value="Colton Hall">Colton Hall</option>
+                                <option value="Coullimore Hall">Cullimore Hall</option>
+                                <option value="Cypress Residence Hall">Cypress Residence Hall</option>
+                                <option value="Dorman Residence Hall">Dorman Residence Hall</option>
+                                <option value="Eberhardt Hall">Eberhardt Hall</option>
+                                <option value="ECEC">ECEC</option>
+                                <option value="EDC1 (240 MLK)">EDC1 (240 MLK)</option>
+                                <option value="EDC2 (105 Lock)">EDC2 (105 Lock)</option>
+                                <option value="EDC3 (211 Warren)">EDC3 (211 Warren)</option>
+                                <option value="Facilities Services Building">Facilities Services Building</option>
+                                <option value="Facilities Services Warehouse">Facilities Services Warehouse</option>
+                                <option value="Faculty Memorial Hall">Faculty Memorial Hall</option>
+                                <option value="Fenster Hall">Fenster Hall</option>
+                                <option value="GITC">GITC</option>
+                                <option value="Greek Way 05">Greek Way 05</option>
+                                <option value="Greek Way 07">Greek Way 07</option>
+                                <option value="Greek Way 09">Greek Way 09</option>
+                                <option value="Greek Way 11">Greek Way 11</option>
+                                <option value="Greek Way 13">Greek Way 13</option>
+                                <option value="Greek Way 15">Greek Way 15</option>
+                                <option value="Greek Way 17">Greek Way 17</option>
+                                <option value="Greek Way 19">Greek Way 19</option>
+                                <option value="Greek Way 21">Greek Way 21</option>
+                                <option value="Greek Way 23">Greek Way 23</option>
+                                <option value="Grounds">Grounds</option>
+                                <option value="Kupfrian Hall">Kupfrian Hall</option>
+                                <option value="Laurel Hall">Laruel Hall</option>
+                                <option value="Life Sciences & Engineering Center">Life Sciences & Engineering Center</option>
+                                <option value="Mechanical Engineering Center">Mechanical Engineering Center</option>
+                                <option value="Microelectronics Center">Microelectronics Center</option>
+                                <option value="Naimoli Family Athletic Center">Naimoli Family Athletic Center</option>
+                                <option value="Oak Residence Hall">Oak Residence Hall</option>
+                                <option value="Parking Deck">Parking Deck</option>
+                                <option value="Parking Lots">Parking Lots</option>
+                                <option value="Redwood Residence Hall">Redwood Residence Hall</option>
+                                <option value="Science & Technology Park Garage">Science & Technology Park Garage</option>
+                                <option value="Specht Building">Specht Building</option>
+                                <option value="Tiernan Hall">Tiernan Hall</option>
+                                <option value="Wellness & Events Center">Wellness & Events Center</option>
+                                <option value="Weston Hall">Weston Hall</option>
+                                <option value="York Center">York Center</option>
+                            </select>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="requestStep">
+                            <h3>Step 2:</h3>
+                            <p>What area is the request in?</p>
+                            <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                                <input class="input100" type="text" name="username" placeholder="Back stairwell">
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="requestStep">
+                            <h3>Step 3:</h3>
+                            <p>Category?</p>
+                            <br>
+                            <div class="row">
+                                <div class="categoryIcon">
+                                    <i class="fas fa-hammer"></i>
+                                    <span>&nbsp;Carpentry</span>
+                                </div>
+                                <div class="categoryIcon">
+                                    <i class="fas fa-hammer"></i>
+                                    <span>&nbsp;Carpentry</span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <div class="requestStep">
+                            <h3>Step 4:</h3>
+                            <p>What is the request?</p>
+                            <br>
+                            <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                                <textarea class="input100" name="area" rows="10" cols="50" placeholder="The sink is broken."></textarea>
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+					<!--<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="flex-sb-m w-full p-b-30">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
+
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>-->
+
+					<div class="newrequest-login100-form-btn">
+						<a class="request-form-btn mx-auto">
+							Submit Request
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
