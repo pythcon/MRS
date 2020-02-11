@@ -20,7 +20,4 @@ if (!authenticate($user, $pass)){
 $_SESSION['logged'] = true;
 
 redirect('dashboard.php');
-
-
-
 ?>
