@@ -249,6 +249,18 @@ iframe {
   padding: 43px 88px 93px 190px;
 }
 
+.request-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 43px 88px 43px 88px;
+}
+
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -403,6 +415,21 @@ input.input100 {
   min-width: 160px;
   height: 50px;
   background-color: #57b846;
+  border-radius: 25px;
+}
+    
+.request-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  background-color: #D22630;
   border-radius: 25px;
 
   font-family: Poppins-Regular;

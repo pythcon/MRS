@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V15</title>
+	<title>NJIT MRS | Dashboard</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -27,8 +27,28 @@
 					</span>
 				</div>
 
-				<form class="login100-form validate-form" action="handler.php">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+				<form class="request-form validate-form" action="handler.php">
+                    <div class="row">
+                        <div>
+                            <h3>Step 1:</h3>
+                            <p>Where is your request for?</p>
+                            <select name="location">
+                                <option value="Campbell Hall">Campbell Hall</option>
+                                <option value="Campus Center">Campus Center</option>
+                                <option value="Campus Wide">Campus-Wide</option>
+                                <option value="Central Avenue Building">Central Avenue Building</option>
+                                <option value="Central King Building">Central King Building</option>
+                                <option value="CHEN">CHEN</option>
+                                <option value="Colton Hall">Colton Hall</option>
+                                <option value="Coullimore Hall">Cullimore Hall</option>
+                                <option value="Cypress Residence Hall">Cypress Residence Hall</option>
+                                <option value="Dorman Residence Hall">Dorman Residence Hall</option>
+                                <option value="Eberhardt Hall">Eberhardt Hall</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+					<!--<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Username</span>
 						<input class="input100" type="text" name="username" placeholder="Enter username">
 						<span class="focus-input100"></span>
@@ -53,11 +73,11 @@
 								Forgot Password?
 							</a>
 						</div>
-					</div>
+					</div>-->
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
+						<button class="request-form-btn mx-auto">
+							New Request
 						</button>
 					</div>
 				</form>
