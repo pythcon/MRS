@@ -12,7 +12,7 @@ $pass = filter_input(INPUT_POST, 'pass', FILTER_SANITIZE_SPECIAL_CHARS);
 
 if (!authenticate($user, $pass)){
     echo "<script>alert(\"Incorrect Credentials...\");</script>";
-    redirect("/index.html");
+    redirect("index.html");
     die();
 }
 
