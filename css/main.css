@@ -571,4 +571,27 @@ input.input100 {
     border: 1px;
 }
 
+.categoryIcon{
+    padding-left: .5em;
+    padding-right: .5em;
+}
 
+/*Icons*/
+input[type=radio] { 
+    display: none; 
+}
+
+#carpentry input[type=radio] ~ label:before { 
+    color: #000000; 
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block; 
+    content: "\f6e3" !important; 
+    margin-right: 8px; 
+}
+
+#carpentry input[type=radio]:checked ~ label:before { 
+    content: "\f6e3"; 
+    color: red;
+}

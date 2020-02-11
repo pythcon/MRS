@@ -89,8 +89,8 @@
                         <div class="requestStep">
                             <h3>Step 2:</h3>
                             <p>What area is the request in?</p>
-                            <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-                                <input class="input100" type="text" name="username" placeholder="Back stairwell">
+                            <div class="wrap-input100 validate-input m-b-26" data-validate="Area is required">
+                                <input class="input100" type="text" name="area" placeholder="Back stairwell">
                                 <span class="focus-input100"></span>
                             </div>
                         </div>
@@ -101,13 +101,17 @@
                             <p>Category?</p>
                             <br>
                             <div class="row">
+                                <div id="carpentry">
+                                    <input type="radio">
+                                    <label>Test</label>
+                                </div>
                                 <div class="categoryIcon">
                                     <i class="fas fa-hammer"></i>
                                     <span>&nbsp;Carpentry</span>
                                 </div>
                                 <div class="categoryIcon">
-                                    <i class="fas fa-hammer"></i>
-                                    <span>&nbsp;Carpentry</span>
+                                    <input type="radio" id="Custodial"><i class="fas fa-broom"></i>
+                                    <span>&nbsp;Custodial</span>
                                 </div>
                             </div>
                         </div>
@@ -117,8 +121,17 @@
                             <h3>Step 4:</h3>
                             <p>What is the request?</p>
                             <br>
-                            <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-                                <textarea class="input100" name="area" rows="10" cols="50" placeholder="The sink is broken."></textarea>
+                            <div class="wrap-input100 validate-input m-b-26" data-validate="Description is required">
+                                <textarea class="input100" name="description" rows="10" cols="50" placeholder="The sink is broken."></textarea>
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <div class="requestStep">
+                            <h3>Step 5:</h3>
+                            <p>Photos or Videos?</p>
+                            <br>
+                            <div class="wrap-input100 validate-input m-b-26">
+                                <textarea class="input100" name="files" rows="10" cols="50" placeholder="The sink is broken."></textarea>
                                 <span class="focus-input100"></span>
                             </div>
                         </div>
