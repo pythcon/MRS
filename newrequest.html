@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
+    <link href="/fonts/fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
 </head>
 <body>
 	
@@ -28,61 +29,63 @@
 					</span>
 				</div>
 
-				<form class="request-form validate-form" action="handler_newrequest.php">
+				<form class="request-form" action="handler_newrequest.php">
                     <div class="mx-auto">
                         <div class="requestStep">
-                            <h3>Step 1:</h3>
-                            <p>What is the location of your request?</p>
-                            <select name="location">
-                                <option value="">(select location)</option>
-                                <option value="Campbell Hall">Campbell Hall</option>
-                                <option value="Campus Center">Campus Center</option>
-                                <option value="Campus Wide">Campus-Wide</option>
-                                <option value="Central Avenue Building">Central Avenue Building</option>
-                                <option value="Central King Building">Central King Building</option>
-                                <option value="CHEN">CHEN</option>
-                                <option value="Colton Hall">Colton Hall</option>
-                                <option value="Coullimore Hall">Cullimore Hall</option>
-                                <option value="Cypress Residence Hall">Cypress Residence Hall</option>
-                                <option value="Dorman Residence Hall">Dorman Residence Hall</option>
-                                <option value="Eberhardt Hall">Eberhardt Hall</option>
-                                <option value="ECEC">ECEC</option>
-                                <option value="EDC1 (240 MLK)">EDC1 (240 MLK)</option>
-                                <option value="EDC2 (105 Lock)">EDC2 (105 Lock)</option>
-                                <option value="EDC3 (211 Warren)">EDC3 (211 Warren)</option>
-                                <option value="Facilities Services Building">Facilities Services Building</option>
-                                <option value="Facilities Services Warehouse">Facilities Services Warehouse</option>
-                                <option value="Faculty Memorial Hall">Faculty Memorial Hall</option>
-                                <option value="Fenster Hall">Fenster Hall</option>
-                                <option value="GITC">GITC</option>
-                                <option value="Greek Way 05">Greek Way 05</option>
-                                <option value="Greek Way 07">Greek Way 07</option>
-                                <option value="Greek Way 09">Greek Way 09</option>
-                                <option value="Greek Way 11">Greek Way 11</option>
-                                <option value="Greek Way 13">Greek Way 13</option>
-                                <option value="Greek Way 15">Greek Way 15</option>
-                                <option value="Greek Way 17">Greek Way 17</option>
-                                <option value="Greek Way 19">Greek Way 19</option>
-                                <option value="Greek Way 21">Greek Way 21</option>
-                                <option value="Greek Way 23">Greek Way 23</option>
-                                <option value="Grounds">Grounds</option>
-                                <option value="Kupfrian Hall">Kupfrian Hall</option>
-                                <option value="Laurel Hall">Laruel Hall</option>
-                                <option value="Life Sciences & Engineering Center">Life Sciences & Engineering Center</option>
-                                <option value="Mechanical Engineering Center">Mechanical Engineering Center</option>
-                                <option value="Microelectronics Center">Microelectronics Center</option>
-                                <option value="Naimoli Family Athletic Center">Naimoli Family Athletic Center</option>
-                                <option value="Oak Residence Hall">Oak Residence Hall</option>
-                                <option value="Parking Deck">Parking Deck</option>
-                                <option value="Parking Lots">Parking Lots</option>
-                                <option value="Redwood Residence Hall">Redwood Residence Hall</option>
-                                <option value="Science & Technology Park Garage">Science & Technology Park Garage</option>
-                                <option value="Specht Building">Specht Building</option>
-                                <option value="Tiernan Hall">Tiernan Hall</option>
-                                <option value="Wellness & Events Center">Wellness & Events Center</option>
-                                <option value="Weston Hall">Weston Hall</option>
-                                <option value="York Center">York Center</option>
-                            </select>
+                            <div class="col=lg-5">
+                                <h3>Step 1:</h3>
+                                <p>What is the location of your request?</p>
+                                <select name="location" class="form-control">
+                                    <option value="">(select location)</option>
+                                    <option value="Campbell Hall">Campbell Hall</option>
+                                    <option value="Campus Center">Campus Center</option>
+                                    <option value="Campus Wide">Campus-Wide</option>
+                                    <option value="Central Avenue Building">Central Avenue Building</option>
+                                    <option value="Central King Building">Central King Building</option>
+                                    <option value="CHEN">CHEN</option>
+                                    <option value="Colton Hall">Colton Hall</option>
+                                    <option value="Coullimore Hall">Cullimore Hall</option>
+                                    <option value="Cypress Residence Hall">Cypress Residence Hall</option>
+                                    <option value="Dorman Residence Hall">Dorman Residence Hall</option>
+                                    <option value="Eberhardt Hall">Eberhardt Hall</option>
+                                    <option value="ECEC">ECEC</option>
+                                    <option value="EDC1 (240 MLK)">EDC1 (240 MLK)</option>
+                                    <option value="EDC2 (105 Lock)">EDC2 (105 Lock)</option>
+                                    <option value="EDC3 (211 Warren)">EDC3 (211 Warren)</option>
+                                    <option value="Facilities Services Building">Facilities Services Building</option>
+                                    <option value="Facilities Services Warehouse">Facilities Services Warehouse</option>
+                                    <option value="Faculty Memorial Hall">Faculty Memorial Hall</option>
+                                    <option value="Fenster Hall">Fenster Hall</option>
+                                    <option value="GITC">GITC</option>
+                                    <option value="Greek Way 05">Greek Way 05</option>
+                                    <option value="Greek Way 07">Greek Way 07</option>
+                                    <option value="Greek Way 09">Greek Way 09</option>
+                                    <option value="Greek Way 11">Greek Way 11</option>
+                                    <option value="Greek Way 13">Greek Way 13</option>
+                                    <option value="Greek Way 15">Greek Way 15</option>
+                                    <option value="Greek Way 17">Greek Way 17</option>
+                                    <option value="Greek Way 19">Greek Way 19</option>
+                                    <option value="Greek Way 21">Greek Way 21</option>
+                                    <option value="Greek Way 23">Greek Way 23</option>
+                                    <option value="Grounds">Grounds</option>
+                                    <option value="Kupfrian Hall">Kupfrian Hall</option>
+                                    <option value="Laurel Hall">Laruel Hall</option>
+                                    <option value="Life Sciences & Engineering Center">Life Sciences & Engineering Center</option>
+                                    <option value="Mechanical Engineering Center">Mechanical Engineering Center</option>
+                                    <option value="Microelectronics Center">Microelectronics Center</option>
+                                    <option value="Naimoli Family Athletic Center">Naimoli Family Athletic Center</option>
+                                    <option value="Oak Residence Hall">Oak Residence Hall</option>
+                                    <option value="Parking Deck">Parking Deck</option>
+                                    <option value="Parking Lots">Parking Lots</option>
+                                    <option value="Redwood Residence Hall">Redwood Residence Hall</option>
+                                    <option value="Science & Technology Park Garage">Science & Technology Park Garage</option>
+                                    <option value="Specht Building">Specht Building</option>
+                                    <option value="Tiernan Hall">Tiernan Hall</option>
+                                    <option value="Wellness & Events Center">Wellness & Events Center</option>
+                                    <option value="Weston Hall">Weston Hall</option>
+                                    <option value="York Center">York Center</option>
+                                </select>
+                            </div>
                         </div>
                         <br>
                         <hr>
@@ -96,23 +99,52 @@
                         </div>
                         <br>
                         <hr>
-                        <div class="requestStep">
+                        <div class="requestStep col-12">
                             <h3>Step 3:</h3>
                             <p>Category?</p>
                             <br>
                             <div class="row">
-                                <div id="carpentry">
-                                    <input type="radio">
-                                    <label>Test</label>
+                                <div class="col-md-4">
+                                    <input type="radio" class="card-input-element">
+                                    <div id="carpentry" class="card-input">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <i class="fas fa-hammer mx-auto"></i>
+                                                &nbsp;
+                                                <h8 class="card-title">Carpentry</h8>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="categoryIcon">
-                                    <i class="fas fa-hammer"></i>
-                                    <span>&nbsp;Carpentry</span>
+                                <div class="col-md-4">
+                                    <div id="carpentry">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <i class="fas fa-hammer mx-auto"></i>
+                                                &nbsp;
+                                                <h8 class="card-title">Carpentry</h8>
+                                            </div>
+                                            <div class="col-6">
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="categoryIcon">
-                                    <input type="radio" id="Custodial"><i class="fas fa-broom"></i>
-                                    <span>&nbsp;Custodial</span>
+                                <div class="col-md-4">
+                                    <div id="carpentry">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <i class="fas fa-hammer mx-auto"></i>
+                                                &nbsp;
+                                                <h8 class="card-title">Carpentry</h8>
+                                            </div>
+                                            <div class="col-6">
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
                         </div>
                         <br>
@@ -131,7 +163,7 @@
                             <p>Photos or Videos?</p>
                             <br>
                             <div class="wrap-input100 validate-input m-b-26">
-                                <textarea class="input100" name="files" rows="10" cols="50" placeholder="The sink is broken."></textarea>
+                                <input type="file">
                                 <span class="focus-input100"></span>
                             </div>
                         </div>

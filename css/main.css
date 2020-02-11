@@ -2,6 +2,7 @@
   color: transparent;
 } */
 
+@import url(//netdna.bootstrapcdn.com/font-awesome/5.12.1/css/font-awesome.css);
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -251,14 +252,7 @@ iframe {
 
 .request-form {
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 43px 88px 43px 88px;
+  padding: 2em 2em;
 }
 
 
@@ -584,10 +578,8 @@ input[type=radio] {
 #carpentry input[type=radio] ~ label:before { 
     color: #000000; 
     font-family: "Font Awesome 5 Free";
-    font-style: normal;
-    font-weight: 400;
-    display: inline-block; 
-    content: "\f6e3" !important; 
+    font-weight: 900;
+    content: "\f179"; 
     margin-right: 8px; 
 }
 
@@ -595,3 +587,22 @@ input[type=radio] {
     content: "\f6e3"; 
     color: red;
 }
+
+/*Radio Buttons*/
+
+.card-input-element {
+    display: none;
+}
+
+.card-input {
+    margin: 10px;
+    padding: 00px;
+}
+
+.card-input:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+     box-shadow: 0 0 1px 1px #2ecc71;
+ }
