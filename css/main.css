@@ -570,6 +570,13 @@ input.input100 {
     padding-right: .5em;
 }
 
+.center-icon{
+    margin: 0 auto !important;
+    padding-top: .2em;
+    font-size: 3em;
+}
+
+
 /*Icons*/
 input[type=radio] { 
     display: none; 
@@ -604,5 +611,6 @@ input[type=radio] {
 }
 
 .card-input-element:checked + .card-input {
-     box-shadow: 0 0 1px 1px #2ecc71;
+    box-shadow: 0 0 1px 1px #2ecc71;
+    
  }
