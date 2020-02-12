@@ -15,7 +15,7 @@ $files="";
 
 echo"
     <script>
-        alert(\"$location, $area, $category, $description\");
+        alert(\"$user, $location, $area, $category, $description\");
     </script>";
 
 $user = $_SESSION['user'];
