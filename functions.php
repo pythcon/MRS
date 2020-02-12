@@ -63,7 +63,7 @@ function getBuilding($user){
         $results = $q->fetchAll();
 
         if($q->rowCount() > 0){
-            $q->bindValue(':building', $building, PDO::PARAM_STR);
+            $building = $results[0]['building'];
             return $building;
         }else{
             return "INVALID BUILDING";
@@ -91,7 +91,7 @@ function getRoom($user){
         $results = $q->fetchAll();
 
         if($q->rowCount() > 0){
-            $q->bindValue(':room', $room, PDO::PARAM_STR);
+            $room = $results[0]['room'];
             return $room;
         }else{
             return "INVALID ROOM";
