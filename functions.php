@@ -118,7 +118,7 @@ function listRequests($user){
         exit();
     }
     
-    
+}
 
 
 ?>
