@@ -65,8 +65,9 @@ function submitRequest($user, $location, $area, $category, $description, $files)
         $results = $q->fetchAll();
 
         $rows = $q->rowCount();
+        $rid = $rows + 1;
         
-        $sql = "INSERT INTO requests(rid, user, location, area, category, description, files) VALUES ($rows + 1, '$user', '$location', '$area' '$category', '$description', '$files')";
+        $sql = "INSERT INTO requests(rid, user, location, area, category, description, files) VALUES ($rid, '$user', '$location', '$area' '$category', '$description', '$files')";
         $q = $db->prepare($sql);
         
         echo"
