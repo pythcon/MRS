@@ -17,6 +17,7 @@ if (!authenticate($user, $pass)){
 }
 
 //Passed all checks
+$_SESSION['user'] = $user;
 $_SESSION['logged'] = true;
 
 redirect('dashboard.php');
