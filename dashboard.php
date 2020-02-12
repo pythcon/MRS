@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    include ('functions.php');
+    gatekeeper();
+
+    $user = $_SESSION['user'];
+    $building = getBuilding($user);
+    $room = getRoom($user);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +44,12 @@
                             <p>What would you like to do?</p>
                             <br>
                             <div class="mx-auto" id="accountPreview">
-                                <h5>Hello $user</h5>
-                                <p>You live in <b>$building</b>, in room <b>$room</b>.</p>
+                                <?php
+                                    echo "
+                                    <h5>Hello $user</h5>
+                                    <p>You live in <b>$building</b>, in room <b>$room</b>.</p>
+                                    ";
+                                ?>
                             </div>
                             <br>
                             

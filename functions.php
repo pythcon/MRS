@@ -49,6 +49,62 @@ function authenticate($user, $pass){
     }
 }
 
+function getBuilding($user){
+    global $db_hostname;
+    global $db_username;
+    global $db_password;
+    global $db_project;
+    $dsn = "mysql:host=$db_hostname;dbname=$db_project";
+    try {
+        $db = new PDO($dsn, $db_username, $db_password);
+        $sql = "SELECT * FROM users WHERE email='$user'";
+        $q = $db->prepare($sql);
+        $q->execute();
+        $results = $q->fetchAll();
+
+        if($q->rowCount() > 0){
+            $sql->bindValue(':building', $building, PDO::PARAM_STR);
+            return $building;
+        }else{
+            return "INVALID BUILDING";
+        } 
+        $q->closeCursor();
+
+
+    } catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+        exit();
+    }
+}
+
+function getRoom($user){
+    global $db_hostname;
+    global $db_username;
+    global $db_password;
+    global $db_project;
+    $dsn = "mysql:host=$db_hostname;dbname=$db_project";
+    try {
+        $db = new PDO($dsn, $db_username, $db_password);
+        $sql = "SELECT * FROM users WHERE email='$user'";
+        $q = $db->prepare($sql);
+        $q->execute();
+        $results = $q->fetchAll();
+
+        if($q->rowCount() > 0){
+            $sql->bindValue(':room', $room, PDO::PARAM_STR);
+            return $room;
+        }else{
+            return "INVALID ROOM";
+        } 
+        $q->closeCursor();
+
+
+    } catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+        exit();
+    }
+}
+
 function submitRequest($user, $location, $area, $category, $description, $files){
     global $db_hostname;
     global $db_username;
