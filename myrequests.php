@@ -1,6 +1,9 @@
 <?php
     session_start();
     gatekeeper();
+
+    include ('functions.php');
+
     $user = $_SESSION['user'];
 ?>
 
