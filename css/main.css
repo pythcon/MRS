@@ -565,34 +565,15 @@ input.input100 {
     border: 1px;
 }
 
-.categoryIcon{
-    padding-left: .5em;
-    padding-right: .5em;
-}
-
 .center-icon{
     margin: 0 auto !important;
     padding-top: .2em;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 
-/*Icons*/
 input[type=radio] { 
     display: none; 
-}
-
-#carpentry input[type=radio] ~ label:before { 
-    color: #000000; 
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f179"; 
-    margin-right: 8px; 
-}
-
-#carpentry input[type=radio]:checked ~ label:before { 
-    content: "\f6e3"; 
-    color: red;
 }
 
 /*Radio Buttons*/
