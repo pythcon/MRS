@@ -26,6 +26,6 @@ submitRequest($user, $location, $area, $category, $description, $files);
 echo"
     <script>
         alert(\"Request Added.\");
-        window.location.replace(\"/dashboard.php\");
+        window.location.replace(\"dashboard.php\");
     </script>";
 ?>
