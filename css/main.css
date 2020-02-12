@@ -577,10 +577,22 @@ input.input100 {
 }
 
 @media (max-width: 992px) {
-  .alert-validate::before {
-    visibility: visible;
-    opacity: 1;
-  }
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+    .center-icon{
+        padding-top: 0 !important;
+        font-size: 1.5em !important;
+    }
+    
+    .card{
+        padding: .2em .2em 0 .2em !important;
+    }
+    
+    .card-body{
+        padding: 0 !important;
+    }
 }
 
 .requestStep{

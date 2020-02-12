@@ -48,6 +48,31 @@ function authenticate($user, $pass){
         exit();
     }
 }
+
+function submitRequest($user, $location, $area, $category, $description, $files){
+    global $db_hostname;
+    global $db_username;
+    global $db_password;
+    global $db_project;
+    
+    $dsn = "mysql:host=$db_hostname;dbname=$db_project";
+    try {
+        $db = new PDO($dsn, $db_username, $db_password);
+        $sql = "INSERT INTO requests(rid, user, location, area, category, description, files) VALUES (rid=rid+1, '$user', '$location', '$category', '$description', '')";
+        $q = $db->prepare($sql);
+
+        if($q->execute() === false){
+            die('Error creating new request.');
+        }
+        
+        $q->closeCursor();
+
+
+    } catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+        exit();
+    }
+}
     
 
 
