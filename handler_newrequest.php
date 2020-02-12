@@ -15,12 +15,6 @@ $files="";
 
 $user = $_SESSION['user'];
 
-echo"
-    <script>
-        alert(\"$user, $location, $area, $category, $description\");
-    </script>";
-
-
 submitRequest($user, $location, $area, $category, $description, $files);
 
 echo"
