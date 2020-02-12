@@ -71,7 +71,7 @@ function submitRequest($user, $location, $area, $category, $description, $files)
         
         echo"
         <script>
-            alert(\"$rows+1, $user, $location, $area, $category, $description, $files\");
+            alert(\"(".$rows+1."), $user, $location, $area, $category, $description, $files\");
         </script>";
 
         if($q->execute() === false){
