@@ -68,6 +68,11 @@ function submitRequest($user, $location, $area, $category, $description, $files)
         
         $sql = "INSERT INTO requests(rid, user, location, area, category, description, files) VALUES ($rows + 1, '$user', '$location', '$area' '$category', '$description', '$files')";
         $q = $db->prepare($sql);
+        
+        echo"
+        <script>
+            alert(\"$rows+1, $user, $location, $area, $category, $description, $files\");
+        </script>";
 
         if($q->execute() === false){
             die('Error creating new request.');
