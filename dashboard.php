@@ -37,7 +37,7 @@
 					</span>
 				</div>
 
-				<form class="request-form validate-form" action="handler.php">
+				<form class="request-form validate-form" action="#">
                     <div class="row">
                         <div>
                             <h3>Dashboard:</h3>
