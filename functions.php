@@ -58,7 +58,15 @@ function submitRequest($user, $location, $area, $category, $description, $files)
     $dsn = "mysql:host=$db_hostname;dbname=$db_project";
     try {
         $db = new PDO($dsn, $db_username, $db_password);
-        $sql = "INSERT INTO requests(rid, user, location, area, category, description, files) VALUES (rid=rid+1, '$user', '$location', '$category', '$description', '')";
+        
+        $sql = "SELECT * FROM requests";
+        $q = $db->prepare($sql);
+        $q->execute();
+        $results = $q->fetchAll();
+
+        $rows = $q->rowCount();
+        
+        $sql = "INSERT INTO requests(rid, user, location, area, category, description, files) VALUES ($rows + 1, '$user', '$location', '$category', '$description', '')";
         $q = $db->prepare($sql);
 
         if($q->execute() === false){
