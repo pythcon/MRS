@@ -45,10 +45,8 @@
                             <br>
                             <div class="mx-auto" id="accountPreview">
                                 <?php
-                                    echo "
-                                    <h5>Hello $user</h5>
-                                    <p>You live in <b>$building</b>, in room <b>$room</b>.</p>
-                                    ";
+                                    echo "<h5>Hello $user</h5>";
+                                    echo "<p>You live in <b>$building</b>, in room <b>$room</b>.</p>";
                                 ?>
                             </div>
                             <br>
