@@ -99,12 +99,13 @@ function listRequests($user){
 
         if($q->rowCount() > 0){
             foreach ($results as $row){
+                $rid = $row['rid'];
                 $location = $row['location'];
                 $description = $row['description'];
                 $status = $row['status'];
                 $date = $row['date'];
                 
-                $requestList .= "<tr><td>$location</td><td>$description</td><td>$status</td><td>$date</td></tr>";
+                $requestList .= "<tr><td>$rid</td><td>$location</td><td>$description</td><td>$status</td><td>$date</td></tr>";
             }
             return $requestList;
         }else{
