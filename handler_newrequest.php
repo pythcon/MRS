@@ -13,12 +13,13 @@ $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_SPECIAL_C
 //IMPLEMENT FILES
 $files="";
 
+$user = $_SESSION['user'];
+
 echo"
     <script>
         alert(\"$user, $location, $area, $category, $description\");
     </script>";
 
-$user = $_SESSION['user'];
 
 submitRequest($user, $location, $area, $category, $description, $files);
 
