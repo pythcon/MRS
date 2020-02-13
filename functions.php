@@ -230,11 +230,7 @@ function listAllRequests($role){
         if($q->rowCount() > 0){
             foreach ($results as $row){
                 $location = $row['location'];
-                echo"
-                    <script>
-                        alert(\"$access\");
-                    </script>";
-                if (strpos($location, $access) !== false){
+                if (strpos($access, $location) !== false){
                     $rid = $row['rid'];
                     $description = $row['description'];
                     $status = $row['status'];
