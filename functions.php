@@ -16,7 +16,7 @@ function gatekeeper(){
         echo"
         <script>
             alert(\"Not logged in...\");
-            window.location.replace(\"/index.html\");
+            window.location.replace(\"index.html\");
         </script>";
         exit();
     }
