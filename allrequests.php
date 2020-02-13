@@ -73,7 +73,7 @@
                                 <!--Table Printout-->
                                 <?php
                                     echo "<table class='table'>";
-                                    echo "<tr><td>RID</td><td>Location</td><td>Description</td><td>Status</td><td>Date</td><td>Complete Date</td></tr>";
+                                    echo "<tr><td>RID</td><td>Status</td><td>Location</td><td>Description</td><td>Date</td><td>Complete Date</td></tr>";
                                     $requestList = listAllRequests($role);
                                     echo $requestList;
                                     echo "</table>";

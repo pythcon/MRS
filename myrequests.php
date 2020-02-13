@@ -68,7 +68,7 @@
                                 <!--Table Printout-->
                                 <?php
                                     echo "<table class='table'>";
-                                    echo "<tr><td>RID</td><td>Location</td><td>Description</td><td>Status</td><td>Date</td></tr>";
+                                    echo "<tr><td>RID</td><td>Status</td><td>Location</td><td>Description</td><td>Date</td></tr>";
                                     $requestList = listRequests($user);
                                     echo $requestList;
                                     echo "</table>";

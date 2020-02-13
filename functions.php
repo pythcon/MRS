@@ -190,7 +190,7 @@ function listRequests($user){
                 $date = $row['date'];
                 $completeDate = $row['complete'];
 
-                $requestList .= "<tr><td>$rid</td><td>$location</td><td>$description</td><td>$status</td><td>$date</td><td>$completeDate</td></tr>";
+                $requestList .= "<tr><td>$rid</td><td>$status</td><td>$location</td><td>$description</td><td>$date</td><td>$completeDate</td></tr>";
             }
             return $requestList;
         }else{
@@ -238,7 +238,7 @@ function listAllRequests($role){
                     $date = $row['date'];
                     $completeDate = $row['complete'];
 
-                    $requestList .= "<tr><td>$rid</td><td>$location</td><td>$description</td><td>$status</td><td>$date</td><td>$completeDate</td></tr>";
+                    $requestList .= "<tr><td>$rid</td><td>$status</td><td>$location</td><td>$description</td><td>$date</td><td>$completeDate</td></tr>";
                 }
             }
             return $requestList;
