@@ -114,9 +114,11 @@
 							My Requests
 						</a>
                         <!--if staff member-->
-                        <a class="request-form-btn mx-auto" href="allrequests.php">
-							All Requests
-						</a>
+                        <?php
+                        if ($role != 'Resident'){
+                            echo "<a class='request-form-btn mx-auto'       href='allrequests.php''> All Requests </a>";
+                        }
+                        ?>
 					</div>
 				</form>
 			</div>
