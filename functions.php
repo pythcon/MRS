@@ -232,7 +232,7 @@ function listAllRequests($role){
                 $location = $row['location'];
                 echo"
                     <script>
-                        alert(\"$location\");
+                        alert(\"$access\");
                     </script>";
                 if (strpos($location, $access) !== false){
                     $rid = $row['rid'];
