@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    include ('functions.php');
+    gatekeeper();
+
+    $user = $_SESSION['user'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

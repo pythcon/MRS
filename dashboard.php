@@ -107,7 +107,7 @@
 					</div>-->
 
 					<div class="request-login100-form-btn">
-						<a class="request-form-btn mx-auto" href="newrequest.html">
+						<a class="request-form-btn mx-auto" href="newrequest.php">
 							New Request
 						</a>
                         <a class="request-form-btn mx-auto" href="myrequests.php">
