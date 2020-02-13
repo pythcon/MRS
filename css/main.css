@@ -639,6 +639,6 @@ input[type=radio] {
     color: #fff !important;
 }
 
-.tableCustom{
-    font-size; .5em;
+.table{
+    font-size; .5em !important;
 }
