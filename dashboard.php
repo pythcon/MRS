@@ -8,6 +8,7 @@
     $user = $_SESSION['user'];
     $building = getBuilding($user);
     $room = getRoom($user);
+    $role = getRole($user);
 ?>
 
 <!DOCTYPE html>
@@ -70,7 +71,7 @@
                             <div class="mx-auto" id="accountPreview">
                                 <?php
                                     echo "<h5>Hello $user</h5>";
-                                    echo "<p>You live in <b>$building</b>, in room <b>$room</b>.</p>";
+                                    echo "<p>You are a $role.<br>You live in <b>$building</b>, in room <b>$room</b>.</p>";
                                 ?>
                             </div>
                             <br>
