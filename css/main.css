@@ -231,7 +231,7 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(54,84,99,0.7);
+  /*background-color: rgba(54,84,99,0.7);*/
 }
 
 
@@ -634,3 +634,8 @@ input[type=radio] {
     box-shadow: 0 0 1px 1px #2ecc71;
     
  }
+
+.navbarColor{
+    background-color: #D22630 !important;
+    color: #fff !important;
+}

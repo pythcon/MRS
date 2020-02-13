@@ -30,11 +30,33 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+				<div class="login100-form-title" style="background-image: url(images/NJITMRS.jpg);">
 					<span class="login100-form-title-1">
-						NJIT MRS
+                        &nbsp;
 					</span>
 				</div>
+
+                <nav class="navbar navbar-expand-md navbar-dark navbarColor">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard.php">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="newrequest.php">New Request</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="myrequests.php">My Requests</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
 
 				<form class="request-form validate-form" action="#">
                     <div class="container-fluid">
