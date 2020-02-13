@@ -231,6 +231,10 @@ function listAllRequests($role){
             foreach ($results as $row){
                 $location = $row['location'];
                 if (strpos($location, $access) !== false){
+                    echo"
+                    <script>
+                        alert(\"$location\");
+                    </script>";
                     $rid = $row['rid'];
                     $description = $row['description'];
                     $status = $row['status'];
