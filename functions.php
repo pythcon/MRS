@@ -205,5 +205,52 @@ function listRequests($user){
     
 }
 
+function listAllRequests($role){
+    global $db_hostname;
+    global $db_username;
+    global $db_password;
+    global $db_project;
+    
+    $dsn = "mysql:host=$db_hostname;dbname=$db_project";
+    try {
+        $db = new PDO($dsn, $db_username, $db_password);
+        $sql = "SELECT * FROM roles where name='$role'";
+        $q = $db->prepare($sql);
+        $q->execute();
+        $results = $q->fetchAll();
+        foreach ($results as $row){
+            $access = $row['access'];
+        }
+        
+        $sql = "SELECT * FROM requests";
+        $q = $db->prepare($sql);
+        $q->execute();
+        $results = $q->fetchAll();
+
+        if($q->rowCount() > 0){
+            foreach ($results as $row){
+                $location = $row['location'];
+                (strpos($location, $access) !== false)
+                $rid = $row['rid'];
+                $description = $row['description'];
+                $status = $row['status'];
+                $date = $row['date'];
+                
+                $requestList .= "<tr><td>$rid</td><td>$location</td><td>$description</td><td>$status</td><td>$date</td></tr>";
+            }
+            return $requestList;
+        }else{
+            die("Error listing projects.");
+        } 
+        
+        $q->closeCursor();
+
+    } catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+        exit();
+    }
+    
+}
+
 
 ?>
