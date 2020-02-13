@@ -67,7 +67,7 @@
                     <div class="container-fluid">
                         <div>
                             <h3>My Requests:</h3>
-                            <p>A list of your requests.</p>
+                            <p>A list of requests you have access to.</p>
                             <br>
                             <div class="mx-auto">
                                 <!--Table Printout-->
