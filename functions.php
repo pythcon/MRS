@@ -240,6 +240,15 @@ function listAllRequests($role){
 
                     $requestList .= "<tr><td>$rid</td><td>$status</td><td>$location</td><td>$description</td><td>$date</td><td>$completeDate</td></tr>";
                 }
+                if ($access == "ALL"){
+                    $rid = $row['rid'];
+                    $description = $row['description'];
+                    $status = $row['status'];
+                    $date = $row['date'];
+                    $completeDate = $row['complete'];
+
+                    $requestList .= "<tr><td>$rid</td><td>$status</td><td>$location</td><td>$description</td><td>$date</td><td>$completeDate</td></tr>";
+                }
             }
             return $requestList;
         }else{
