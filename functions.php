@@ -230,13 +230,14 @@ function listAllRequests($role){
         if($q->rowCount() > 0){
             foreach ($results as $row){
                 $location = $row['location'];
-                (strpos($location, $access) !== false)
-                $rid = $row['rid'];
-                $description = $row['description'];
-                $status = $row['status'];
-                $date = $row['date'];
-                
-                $requestList .= "<tr><td>$rid</td><td>$location</td><td>$description</td><td>$status</td><td>$date</td></tr>";
+                if (strpos($location, $access) !== false){
+                    $rid = $row['rid'];
+                    $description = $row['description'];
+                    $status = $row['status'];
+                    $date = $row['date'];
+
+                    $requestList .= "<tr><td>$rid</td><td>$location</td><td>$description</td><td>$status</td><td>$date</td></tr>";
+                }
             }
             return $requestList;
         }else{
