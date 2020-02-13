@@ -71,7 +71,7 @@
                             <div class="mx-auto" id="accountPreview">
                                 <?php
                                     echo "<h5>Hello $user</h5>";
-                                    echo "<p>You are a $role.<br>You live in <b>$building</b>, in room <b>$room</b>.</p>";
+                                    echo "<p>You are a <b>$role</b>.<br>You live in <b>$building</b>, in room <b>$room</b>.</p>";
                                 ?>
                             </div>
                             <br>
