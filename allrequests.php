@@ -72,7 +72,7 @@
                             <div class="mx-auto">
                                 <!--Table Printout-->
                                 <?php
-                                    echo "<table class='table table-bordered'>";
+                                    echo "<table class='table'>";
                                     echo "<tr><td>RID</td><td>Status</td><td>Location</td><td>Description</td><td>Date</td><td>Complete Date</td></tr>";
                                     $requestList = listAllRequests($role);
                                     echo $requestList;
