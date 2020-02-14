@@ -247,7 +247,7 @@ function listAllRequests($role){
                     $date = $row['date'];
                     $completeDate = $row['complete'];
 
-                    $requestList .= "<tr><td>$rid</td><td>$status</td><td>$location</td><td>$description</td><td>$date</td><td>$completeDate</td></tr>";
+                    $requestList .= "<form action='requestdetails.php' id='request-$rid'><input type='hidden' value='$rid'><tr><td><a href='#' onclick='document.getElementById('request-$rid').submit()'>$rid</a></td><td>$status</td><td>$location</td><td>$description</td><td>$date</td><td>$completeDate</td></tr></form>";
                 }
             }
             return $requestList;
