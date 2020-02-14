@@ -66,7 +66,7 @@
                     </div>
                 </nav>
 
-				<form class="request-form validate-form" action="#">
+				<div class="request-form validate-form">
                     <div class="container-fluid">
                         <div>
                             <h3>All Requests for Staff:</h3>
@@ -86,7 +86,7 @@
                             
                         </div>
                     </div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
